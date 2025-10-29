@@ -1,15 +1,15 @@
-# Sm-moshi Tap
+# sm0sh1 Tap
 
 ## How do I install these formulae?
 
-`brew install sm-moshi/tap/<formula>`
+`brew install sm0sh1/tap/<formula>`
 
-Or `brew tap sm-moshi/tap` and then `brew install <formula>`.
+Or `brew tap sm0sh1/tap` and then `brew install <formula>`.
 
 Or, in a `brew bundle` `Brewfile`:
 
 ```ruby
-tap "sm-moshi/tap"
+tap "sm0sh1/tap"
 brew "<formula>"
 ```
 
