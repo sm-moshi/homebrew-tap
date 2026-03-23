@@ -19,8 +19,8 @@ cask "yoursecurecloud-drive" do
   depends_on macos: ">= :catalina"
   pkg "ysc_drive_client_latest.pkg"
 
-  uninstall launchctl: "com.seafile.seadrive.helper",
-            quit:      [
+  uninstall launchctl:  "com.seafile.seadrive.helper",
+            quit:       [
               "com.seafile.seadrive",
               "com.seafile.seadrive.fprovider",
             ],
