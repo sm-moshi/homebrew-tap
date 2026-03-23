@@ -6,8 +6,12 @@
     ":semanticCommits",
     ":automergeMinor"
   ],
+<<<<<<< HEAD
   "pinDigests": false,
   "dependencyDashboardApproval": true,
+=======
+  "dependencyDashboardApproval": false,
+>>>>>>> 522c7e6 (migrate: complete GHA to Woodpecker CI migration with Mac SSH builder)
   "assignees": [ "sm-moshi" ],
   "customManagers": [
     {
@@ -89,7 +93,11 @@
     {
       "description": "Headlamp is disabled — suppress updates",
       "matchDepNames": [ "kubernetes-sigs/headlamp" ],
+<<<<<<< HEAD
       "enabled": true
+=======
+      "enabled": false
+>>>>>>> 522c7e6 (migrate: complete GHA to Woodpecker CI migration with Mac SSH builder)
     }
   ]
 }

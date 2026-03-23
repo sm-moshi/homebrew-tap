@@ -69,4 +69,8 @@ fi
 git commit -m "fast-cli: add bottle block for ${VERSION} [CI SKIP]"
 git push origin main
 
+<<<<<<< HEAD
 echo "==> Done — fast-cli ${VERSION} bottled and released"
+=======
+echo "==> Done — fast-cli ${VERSION} bottled and released"
+>>>>>>> 522c7e6 (migrate: complete GHA to Woodpecker CI migration with Mac SSH builder)
