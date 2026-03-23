@@ -16,6 +16,7 @@ steps:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     image: dhi.io/alpine-base:3.23-dev@sha256:fb5ea621f50f24533355a8c58ca68aa9b5b5cd0af080feeb7f66ba1611069212
     environment:
       GITHUB_TOKEN:
@@ -32,6 +33,7 @@ steps:
         set -euo pipefail
         WORKDIR=$(mktemp -d)
         git clone --depth=50 "https://x-access-token:${GITHUB_TOKEN}@github.com/sm-moshi/tap.git" "$WORKDIR"
+<<<<<<< HEAD
         cd "$WORKDIR"
         if [ -n "${CI_COMMIT_PULL_REQUEST:-}" ]; then
           git fetch origin "pull/${CI_COMMIT_PULL_REQUEST}/head" --depth=50
@@ -79,6 +81,9 @@ steps:
 =======
     image: dhi.io/alpine-base:3.23-dev
 >>>>>>> 1649fc0 (fix: use dhi.io/alpine-base:3.23-dev for SSH pipelines)
+=======
+    image: dhi.io/alpine-base:3.23-dev@sha256:fb5ea621f50f24533355a8c58ca68aa9b5b5cd0af080feeb7f66ba1611069212
+>>>>>>> 3c2811f (chore(deps): pin dhi.io/alpine-base docker tag to fb5ea62 (#20))
     environment:
       GITHUB_TOKEN:
         from_secret: github_token
@@ -94,6 +99,8 @@ steps:
         set -euo pipefail
         WORKDIR=$(mktemp -d)
         git clone --depth=50 "https://x-access-token:${GITHUB_TOKEN}@github.com/sm-moshi/homebrew-tap.git" "$WORKDIR"
+=======
+>>>>>>> f2f3fca (chore: update repo paths for tap integration)
         cd "$WORKDIR"
         if [ -n "${CI_COMMIT_PULL_REQUEST:-}" ]; then
           git fetch origin "pull/${CI_COMMIT_PULL_REQUEST}/head" --depth=50

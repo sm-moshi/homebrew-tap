@@ -23,7 +23,11 @@ steps:
       - bash Scripts/update-checksums.sh $CHANGED
       - git config user.name "Woodpecker CI"
       - git config user.email "ci@m0sh1.cc"
+<<<<<<< HEAD
       - git remote set-url origin "https://x-access-token:$GITHUB_TOKEN@github.com/sm-moshi/tap.git"
+=======
+      - 'git remote set-url origin "https://x-access-token:$GITHUB_TOKEN@github.com/sm-moshi/tap.git"'
+>>>>>>> f2f3fca (chore: update repo paths for tap integration)
       - git add Formula/ Casks/
       - |
         if git diff --cached --quiet; then
