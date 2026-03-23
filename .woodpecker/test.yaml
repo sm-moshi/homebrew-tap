@@ -43,6 +43,7 @@ steps:
         fi
         bash "$WORKDIR/Scripts/test-macos.sh" "$WORKDIR"
         rm -rf "$WORKDIR"
+<<<<<<< HEAD
         REMOTE_EOF
 =======
     image: appleboy/drone-ssh
@@ -112,3 +113,6 @@ steps:
         rm -rf "$WORKDIR"
         REMOTE_EOF
 >>>>>>> 76c1a0d (fix: replace drone-ssh plugin with raw SSH for fish shell compat)
+=======
+        REMOTE_EOF
+>>>>>>> c1629d2 (migrate: complete GHA to Woodpecker CI migration with Mac SSH builder)
