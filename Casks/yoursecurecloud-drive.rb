@@ -14,7 +14,9 @@ cask "yoursecurecloud-drive" do
 
   conflicts_with cask: "seadrive"
   depends_on macos: ">= :catalina"
-
+  conflicts_with cask: "seadrive"
+  conflicts_with cask: "seadrive"
+  depends_on macos: ">= :catalina"
   pkg "ysc_drive_client_latest.pkg"
 
   uninstall launchctl:  "com.seafile.seadrive.helper",
