@@ -6,7 +6,8 @@
     ":semanticCommits",
     ":automergeMinor"
   ],
-  "dependencyDashboardApproval": false,
+  "pinDigests": false,
+  "dependencyDashboardApproval": true,
   "assignees": [ "sm-moshi" ],
   "customManagers": [
     {
@@ -88,7 +89,7 @@
     {
       "description": "Headlamp is disabled — suppress updates",
       "matchDepNames": [ "kubernetes-sigs/headlamp" ],
-      "enabled": false
+      "enabled": true
     }
   ]
 }
