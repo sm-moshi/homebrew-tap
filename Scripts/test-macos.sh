@@ -8,7 +8,7 @@ REPO_DIR="${1:?Usage: test-macos.sh <repo-dir>}"
 cd "${REPO_DIR}"
 
 # Point Homebrew tap at our checkout (backup existing)
-TAP_DIR="$(brew --repository)/Library/Taps/sm-moshi/homebrew-tap"
+TAP_DIR="$(brew --repository)/Library/Taps/yaelmoshi/homebrew-tap"
 if [[ -e "${TAP_DIR}" ]] || [[ -L "${TAP_DIR}" ]]
 then
   mv "${TAP_DIR}" "${TAP_DIR}.ci-backup"
@@ -28,7 +28,7 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 export HOMEBREW_NO_ANALYTICS=1
 
 echo "==> Auditing tap"
-brew audit --tap sm-moshi/tap || true
+brew audit --tap yaelmoshi/tap || true
 
 echo "==> Installing and testing formulae"
 FAILED=0
@@ -37,13 +37,13 @@ do
   [[ -f "${formula}" ]] || continue
   name=$(basename "${formula}" .rb)
   echo "--- ${name} ---"
-  if ! brew install "sm-moshi/tap/${name}"
+  if ! brew install "yaelmoshi/tap/${name}"
   then
     echo "FAIL: install ${name}"
     FAILED=1
     continue
   fi
-  if ! brew test "sm-moshi/tap/${name}"
+  if ! brew test "yaelmoshi/tap/${name}"
   then
     echo "FAIL: test ${name}"
     FAILED=1

@@ -1,15 +1,15 @@
-# sm-moshi/tap
+# yaelmoshi/tap
 
 ## How do I install these formulae?
 
-`brew install sm-moshi/tap/<formula>`
+`brew install yaelmoshi/tap/<formula>`
 
-Or `brew tap sm-moshi/tap` and then `brew install <formula>`.
+Or `brew tap yaelmoshi/tap` and then `brew install <formula>`.
 
 Or, in a `brew bundle` `Brewfile`:
 
 ```ruby
-tap "sm-moshi/tap"
+tap "yaelmoshi/tap"
 brew "<formula>"
 ```
 
